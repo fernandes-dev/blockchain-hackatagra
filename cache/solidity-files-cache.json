@@ -70,6 +70,40 @@
       "artifacts": [
         "console"
       ]
+    },
+    "/home/fernandes/hackatagro/contracts/Greeter.sol": {
+      "lastModificationDate": 1633186647096,
+      "contentHash": "bc9e0020d06d757e7e04464cda6063ec",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
     }
   }
 }

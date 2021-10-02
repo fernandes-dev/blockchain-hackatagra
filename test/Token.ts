@@ -1,5 +1,6 @@
-const { ethers } = require("hardhat");
-const { expect } = require("chai");
+import { expect } from "chai"
+import { ethers } from "hardhat";
+import { Signer } from "ethers";
 
 // `describe` is a Mocha function that allows you to organize your tests. It's
 // not actually needed, but having your tests organized makes debugging them

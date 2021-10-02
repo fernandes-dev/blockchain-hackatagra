@@ -1,5 +1,10 @@
-require("@nomiclabs/hardhat-waffle");
-require('dotenv').config()
+import { HardhatUserConfig } from "hardhat/config";
+
+import "@nomiclabs/hardhat-waffle"
+import "@nomiclabs/hardhat-truffle5"
+
+import dotenv from 'dotenv'
+dotenv.config()
 
 // Go to https://www.alchemyapi.io, sign up, create
 // a new App in its dashboard, and replace "KEY" with its key
@@ -11,10 +16,8 @@ const { ALCHEMY_API_KEY } = process.env;
 // Be aware of NEVER putting real Ether into testing accounts
 const { ROPSTEN_PRIVATE_KEY } = process.env;
 
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
-module.exports = {
+
+const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
     ropsten: {
@@ -23,3 +26,5 @@ module.exports = {
     },
   },
 };
+
+export default config
