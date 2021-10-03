@@ -1,0 +1,110 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "notaFiscal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "codigoTipoInsumo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "descricao",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantidade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "valorTotal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "data",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "enderecoEmpresa",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "safra",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Insumos.Dados",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "notaFiscal",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "codigoTipoInsumo",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "descricao",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidade",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "valorTotal",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "data",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "enderecoEmpresa",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "safra",
+				"type": "string"
+			}
+		],
+		"name": "insere",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

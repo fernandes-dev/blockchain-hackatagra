@@ -1,0 +1,165 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cnpj",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "latitude",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "longitude",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "area",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "validadeCertificado",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "safra",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantidadeVendida",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantidadeEmTransito",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "tipoDeEmpresa",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "endereco",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "enderecoCripto",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "armazemEstoqueRastreado",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "estoqueOleo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fatorConversaoSojaOleo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ativo",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Empresa.Dados",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "nome",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "cnpj",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "latitude",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "longitude",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "area",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "validadeCertificado",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "safra",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tipoDeEmpresa",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "endereco",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "enderecoCripto",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "fatorConversaoSojaOleo",
+				"type": "uint256"
+			}
+		],
+		"name": "insere",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

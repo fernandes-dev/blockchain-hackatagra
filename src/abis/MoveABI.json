@@ -1,0 +1,252 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "controle",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeOrigem",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeDestino",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "origem",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destino",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "hashAnterior",
+				"type": "string"
+			}
+		],
+		"name": "esmagarSoja",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "notaFiscal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantidadeOrigem",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantidadeDestino",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "tipoMovimento",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "produtoOrigem",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "produtoDestino",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "origem",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "destino",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "hashAnterior",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "entregue",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct Movimentacao.Dados",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "notaFiscal",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeOrigem",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeDestino",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "origem",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destino",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "hashAnterior",
+				"type": "string"
+			}
+		],
+		"name": "receberOleo",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "notaFiscal",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeOrigem",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeDestino",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "origem",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destino",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "hashAnterior",
+				"type": "string"
+			}
+		],
+		"name": "receberSoja",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "notaFiscal",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeOrigem",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "origem",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destino",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "hashAnterior",
+				"type": "string"
+			}
+		],
+		"name": "venderOleo",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "notaFiscal",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantidadeOrigem",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "origem",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "destino",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "hashAnterior",
+				"type": "string"
+			}
+		],
+		"name": "venderSoja",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

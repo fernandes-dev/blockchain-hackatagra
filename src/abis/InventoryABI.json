@@ -1,0 +1,80 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "endereco",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sojavendido",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sojatransito",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sojaestoque",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "oleoestoque",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Estoque.Dados",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "endereco",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sojavendido",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sojatransito",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sojaestoque",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "oleoestoque",
+				"type": "uint256"
+			}
+		],
+		"name": "insere",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]
