@@ -5,11 +5,11 @@
   "license": "MIT",
   "scripts": {
     "test": "TS_NODE_TRANSPILE_ONLY=1 npx hardhat test",
-    "dev:ropsten": "npx hardhat run src/server.ts --network ropsten",
-    "dev:mainnet": "npx hardhat run src/server.ts --network mainnet",
-    "dev:local": "npx hardhat run src/server.ts",
-    "server": "npx hardhat node",
-    "start": "npx hardhat run src/server.ts --network ropsten"
+    "dev:ropsten": "hardhat run src/server.ts --network ropsten",
+    "dev:mainnet": "hardhat run src/server.ts --network mainnet",
+    "dev:local": "hardhat run src/server.ts",
+    "server": "hardhat node",
+    "start": "hardhat run src/server.ts --network ropsten"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
@@ -24,7 +24,6 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.7",
-    "hardhat": "^2.6.4",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3",
     "web3": "^1.6.0"
@@ -33,6 +32,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "etherscan-api": "^10.0.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hardhat": "^2.6.4"
   }
 }

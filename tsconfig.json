@@ -10,6 +10,9 @@
     "./src",
     "./test"
   ],
+  "exclude": [
+    "./dist"
+  ],
   "files": [
     "./hardhat.config.ts"
   ]
