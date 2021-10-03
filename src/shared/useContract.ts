@@ -93,5 +93,23 @@ export async function useContract({ address, abi, contractName }: UseContractsDT
     tx.input = abiDecoder.decodeMethod(tx.input)
   }))
 
-  return txList
+  const newList = txList.result.map(result => {
+    const newResult = {
+      hash: result.hash,
+      blockHash: result.blockHash,
+      transactionIndex: result.transactionIndex,
+      timeStamp: result.timeStamp,
+      from: result.from,
+      to: result.to,
+      value: result.value,
+      txreceipt_status: result.txreceipt_status,
+      input: result.input
+    }
+
+    newResult[contractName] = result[contractName]
+
+    return newResult
+  })
+
+  return newList
 }
