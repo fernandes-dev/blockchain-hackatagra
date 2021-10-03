@@ -10,7 +10,7 @@ dotenv.config()
 const { ALCHEMY_API_KEY, ROPSTEN_PRIVATE_KEY } = process.env;
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.9",
+  solidity: "0.8.7",
   networks: {
     ropsten: {
       url: `https://eth-ropsten.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,

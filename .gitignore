@@ -1,3 +1,7 @@
 node_modules
 
 .env
+
+src/mock/**.json
+src/mock/**.js
+src/mock/**.ts
