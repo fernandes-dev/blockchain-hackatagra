@@ -8,7 +8,8 @@
     "dev:ropsten": "npx hardhat run src/server.ts --network ropsten",
     "dev:mainnet": "npx hardhat run src/server.ts --network mainnet",
     "dev:local": "npx hardhat run src/server.ts",
-    "server": "npx hardhat node"
+    "server": "npx hardhat node",
+    "start": "npx hardhat run src/server.ts --network ropsten"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
