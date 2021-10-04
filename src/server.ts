@@ -11,4 +11,7 @@ app.use(cors())
 
 app.use(routes)
 
-app.listen(port, () => console.log(`🚀 server runnin on port: ${port}`))
+if (process.env.NODE_ENV !== 'test')
+  app.listen(port, () => console.log(`🚀 server runnin on port: ${port}`))
+
+export { app }

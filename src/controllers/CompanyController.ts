@@ -8,9 +8,6 @@ class CompanyController {
     try {
       const { address } = request.params
 
-      if (!address)
-        return response.status(404).json({ error: 'Address required' })
-
       const list = await useContract({ abi: companyAbi, address, contractName: 'company' })
 
       return response.json({ list })

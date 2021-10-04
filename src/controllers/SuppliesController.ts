@@ -9,9 +9,6 @@ class SuppliesController {
     try {
       const { address } = request.params
 
-      if (!address)
-        return response.status(404).json({ error: 'Address required' })
-
       const list = await useContract({ abi: suppliesAbi, address, contractName: 'supplies' })
 
       return response.json({ list })

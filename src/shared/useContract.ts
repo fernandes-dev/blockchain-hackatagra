@@ -8,7 +8,7 @@ interface UseContractsDTO {
   contractName: string
 }
 
-function setPropertiesWithName(contractName: string, data: any[]): any {
+export function setPropertiesWithName(contractName: string, data: any[]): any {
   let newData: any;
 
   switch (contractName) {
@@ -65,6 +65,25 @@ function setPropertiesWithName(contractName: string, data: any[]): any {
   return newData
 }
 
+export function mapNewList(list: any[], contractName: string): any[] {
+  return list.map(result => {
+    const newResult = {
+      hash: result.hash,
+      blockHash: result.blockHash,
+      transactionIndex: result.transactionIndex,
+      timeStamp: result.timeStamp,
+      from: result.from,
+      to: result.to,
+      value: result.value,
+      txreceipt_status: result.txreceipt_status,
+      input: result.input
+    }
+    newResult[contractName] = result[contractName]
+
+    return newResult
+  })
+}
+
 export async function useContract({ address, abi, contractName }: UseContractsDTO): Promise<any> {
   abiDecoder.addABI(abi)
   const txList = await ethereumAPI.account.txlist(address, 1, 'latest', 1, 100, 'asc')
@@ -93,23 +112,7 @@ export async function useContract({ address, abi, contractName }: UseContractsDT
     tx.input = abiDecoder.decodeMethod(tx.input)
   }))
 
-  const newList = txList.result.map(result => {
-    const newResult = {
-      hash: result.hash,
-      blockHash: result.blockHash,
-      transactionIndex: result.transactionIndex,
-      timeStamp: result.timeStamp,
-      from: result.from,
-      to: result.to,
-      value: result.value,
-      txreceipt_status: result.txreceipt_status,
-      input: result.input
-    }
-
-    newResult[contractName] = result[contractName]
-
-    return newResult
-  })
+  const newList = mapNewList(txList.result, contractName);
 
   return newList
 }

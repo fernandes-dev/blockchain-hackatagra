@@ -13,7 +13,9 @@
     "./src/controllers"
   ],
   "exclude": [
-    "./dist"
+    "./dist",
+    "node_modules",
+    "tests"
   ],
   "files": [
     "./hardhat.config.ts"

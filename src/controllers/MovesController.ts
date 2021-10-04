@@ -8,9 +8,6 @@ class MovesController {
     try {
       const { address } = request.params
 
-      if (!address)
-        return response.status(404).json({ error: 'Address required' })
-
       const list = await useContract({ abi: moveAbi, address, contractName: 'move' })
 
       return response.json({ list })

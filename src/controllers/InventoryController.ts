@@ -8,9 +8,6 @@ class InventoryController {
     try {
       const { address } = request.params
 
-      if (!address)
-        return response.status(404).json({ error: 'Address required' })
-
       const list = await useContract({ abi: inventoryAbi, address, contractName: 'inventory' })
 
       return response.json({ list })
